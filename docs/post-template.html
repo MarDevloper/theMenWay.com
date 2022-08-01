@@ -34,7 +34,7 @@
   <meta name="keywords" content="">
   <meta name="author" content="Ismail Chraa">
 
-  <meta property="og:title" content="ABC Blabla 2020 Friday" />
+  <meta property="og:title" content="" />
   <meta property="og:url" content="" />
   <meta property="og:description" content="">
   <meta property="og:image" itemprop="image" content="url" />
@@ -67,31 +67,59 @@
     <div class="w3-bar w3-purple w3-card">
       <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">theMenWay</a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-indigo">theMenWay</a>
       <span class="w3-right">
-        <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">من نحن </a>
+      <!-- on large screen -->
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-small  w3-hover-indigo" href="#">تبرع لنا</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-hover-indigo">من نحن </a>
       </span>
-      <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top w3-purple" style="margin-top:46px">
-        <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">من نحن</a>
+      <!-- on small screen -->
+      <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-top w3-purple we-right" style="margin-top:2.5rem">
+        <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-right-align w3-hover-indigo" onclick="myFunction()">من نحن</a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-right-align w3-hover-indigo" href="#">تبرع لنا</a>
+
       </div>
     </div>
 
   </div>
 
-
-
   <!-- article and image -->
   <div class="content w3-row">
     <div class="ads w3-col m2 l2 w3-hide-small">✅</div>
     <div class="p w3-col m8 l8 w3-card-4 w3-container" style="padding-top:4.2rem">
-      <h1< /h1>
-        <blockquote class="w3-panel w3-auto w3-rightbar w3-light-grey w3-border-blue">
-          <p class="w3-large">
-            <i>
+      <h1>العنوان الأساسي</h1>
+           <div class=" main-img w3-container w3-border w3-center" style="height:60px">
+             الصورة الأساسية هنا
+        <img class="w3-image w3-hide w3-border w3-padding-small" width="300" height="300" src="static/steveJobs.djpg" alt="title of image">
+      </div>
 
-            </i>
-          </p>
-        </blockquote>
+      <p class="p-content" style="margin-top: 2rem">
+        الجزء الأول من المقالة
+      </p>
+      <blockquote class="w3-panel w3-auto w3-rightbar w3-light-grey w3-border-blue">
+        <p class="w3-large">
+          <i>
+            ضع اقتباس هنا
+          </i>
+        </p>
+      </blockquote>
+      <p class="p-content" style="margin-top: 2rem">
+    الجزء الثاني من المقالة
+      </p>
+      <div class="more-articles w3-border w3-leftbar w3-margin-bottom">
+  <h3 class="w3-margin-right"> إقرأ المزيد من المقالات:</h3>
+  <ul class="w3-ul">
+    <li class="">
+      <a class="w3-hover-blue w3-round-large" style="text-decoration:none" href="url url">
+        <i class="fa fa-external-link w3-text-purple"></i>
+        <span style="margin-right:6px">
+          عنوان المقالة
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
+
     </div>
 
     <div class="ads w3-col m2 l2 w3-hide-small">✅</div>
@@ -117,5 +145,5 @@
     }
   </script>
 </body>
-
+<!-- last update 8-1-2022 -->
 </html>
