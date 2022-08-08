@@ -1,0 +1,17 @@
+    .p-content {
+      text-align: justify;
+      line-height: 2.5;
+      color: black;
+    }
+
+    .ads {
+      opacity: 0;
+    }
+
+    .fa-bars {
+      font-size: 1.7rem;
+    }
+
+    h5 {
+      margin-bottom: -1rem;
+    }
