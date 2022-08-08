@@ -12,6 +12,6 @@
       font-size: 1.7rem;
     }
 
-    h5 {
+  .p-content > h5 {
       margin-bottom: -1rem;
     }
