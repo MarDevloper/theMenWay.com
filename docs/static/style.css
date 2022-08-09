@@ -11,9 +11,11 @@
     .fa-bars {
       font-size: 1.7rem;
     }
-
   .p-content > h5 {
     /*  margin-bottom: -1rem;*/
+    }
+    h1 {
+      font-weight:bold;
     }
     .posts h5 {
       font-weight: bold;
@@ -25,5 +27,8 @@
     }
     
 .posts img {
+  
+}
+.navlink {
   
 }
