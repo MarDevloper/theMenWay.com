@@ -78,106 +78,66 @@
     <div class="ads w3-col m2 l2 w3-hide-small">✅</div>
     <div class="p w3-col m8 l8 w3-card-4 w3-container" style="padding-top:4.2rem">
       <h1 class="w3-section">يمكنك الآن دعم مطور الموقع عن طريق تقديم تبرع مالي عبر خدمة بايپال !</h1>
-      <div class="w3-container w3-padding w3-purple w3-round-large w3-center" style="margin-top:1rem">
-        <i class="fas fa-donate w3-purple" style="font-size:4rem"></i>
+      <div class="w3-container w3-padding w3-blue w3-round-large w3-center" style="margin-top:1rem">
+        <i class="fas fa-donate text-white" style="font-size:3rem"></i>
       </div>
 
       <p class="p-content" style="margin-top: 2rem">
         اذا أعجبك المحتوى الذي نقدمه ولديك الرغبة في دعمنا نحو تقديم المزيد من المحتوى الهادف. الآن بات بإمكانك ذالك عن طريق زر پايپال في الأسفل.
+    <hr>
+    <p dir="ltr" style="line-height: 1.8">
+    if you like our online contents and you have ability to support us for our mission to made more informative contents you can do that by making PayPal donation:
+    </p>
       </p>
       <p class="p-content" style="margin-top: 2rem">
 <div id="smart-button-container">
-  <div style="text-align: center;">
-    <div id="paypal-button-container"></div>
-  </div>
-</div>
-<script src="https://www.paypal.com/sdk/js?client-id=AbfbmKbP2UjD2jx47iDTB5eiahBi4Ub9kA9FZy4F7VYXpFy_rUef29MDbp6zNV8Nc8A14eKLQbyembNo&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-<script>
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=Aa51hImS8_Sp6MAdGJ_gncNALNGT833euFxgJPtONscfbywgMoMBVtbg1IvqyeEzVvnxm7Z0kYtlqZ0S&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'pill',
+          color: 'blue',
+          layout: 'vertical',
+          label: 'paypal',
+          tagline: false 
+        },
 
-  function initPayPalButton() {
-    paypal.Buttons({
-      style: {
-        shape: 'pill',
-        color: 'black',
-        layout: 'vertical',
-        label: 'paypal',
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"Donate","amount":{"currency_code":"USD","value":20}}]
+          });
+        },
 
-      },
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+            
+            // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
 
-      createOrder: function(data, actions) {
-        return actions.order.create({
-          purchase_units: [{ "description": "تبرع إلينا وساهم في استمرار موقعنا ", "amount": { "currency_code": "USD", "value": 10 } }]
-        });
-      },
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '<h3>Thank you for your payment!</h3>';
 
-      onApprove: function(data, actions) {
-        return actions.order.capture().then(function(orderData) {
+            // Or go to another URL:  actions.redirect('thank_you.html');
+            
+          });
+        },
 
-          // Full available details
-          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-
-          // Show a success message within this page, e.g.
-          const element = document.getElementById('paypal-button-container');
-          element.innerHTML = '';
-          element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-          // Or go to another URL:  actions.redirect('thank_you.html');
-
-        });
-      },
-
-      onError: function(err) {
-        console.log(err);
-      }
-    }).render('#paypal-button-container');
-  }
-  initPayPalButton();
-</script><div id="smart-button-container">
-  <div style="text-align: center;">
-    <div id="paypal-button-container"></div>
-  </div>
-</div>
-<script src="https://www.paypal.com/sdk/js?client-id=AbfbmKbP2UjD2jx47iDTB5eiahBi4Ub9kA9FZy4F7VYXpFy_rUef29MDbp6zNV8Nc8A14eKLQbyembNo&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-<script>
-  function initPayPalButton() {
-    paypal.Buttons({
-      style: {
-        shape: 'pill',
-        color: 'black',
-        layout: 'vertical',
-        label: 'paypal',
-
-      },
-
-      createOrder: function(data, actions) {
-        return actions.order.create({
-          purchase_units: [{ "description": "تبرع إلينا وساهم في استمرار موقعنا ", "amount": { "currency_code": "USD", "value": 10 } }]
-        });
-      },
-
-      onApprove: function(data, actions) {
-        return actions.order.capture().then(function(orderData) {
-
-          // Full available details
-          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-
-          // Show a success message within this page, e.g.
-          const element = document.getElementById('paypal-button-container');
-          element.innerHTML = '';
-          element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-          // Or go to another URL:  actions.redirect('thank_you.html');
-
-        });
-      },
-
-      onError: function(err) {
-        console.log(err);
-      }
-    }).render('#paypal-button-container');
-  }
-  initPayPalButton();
-</script>      </p>
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script>
+      </div>
+</p>
 
     </div>
 
