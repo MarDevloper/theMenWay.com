@@ -1,5 +1,6 @@
   <!DOCTYPE html>
-  <html lang="en" dir="ltr">
+  <html lang="en" dir="rtl">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,9 +31,8 @@
 
       gtag('config', 'G-KW3B3FFER3');
     </script>
-    <title>mon CV</title>
-    <link rel="stylesheet" href="./static/style.css">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>تعرف على مطور الموقع..</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <meta name="keywords" content="ismail chraa,chraa">
     <meta name="author" content="Ismail Chraa">
@@ -44,10 +44,27 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="Ar" />
   </head>
+  <style>
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin: 10px 0px;
+    }
+
+    ul li:before {
+      content: "✅  ";
+    }
+
+    p {
+      margin: 5px 4px;
+    }
+  </style>
 
   <body class="">
     <!-- the header : bar, site name logo-->
-    <div class="header w3-top">
+    <div class="header">
       <div class="w3-bar w3-purple w3-card">
         <a class="w3-bar-item w3-button w3-padding w3-hide-medium w3-hide-large w3-right w3-hover-indigo" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 
@@ -69,145 +86,72 @@
       </div>
     </div>
     <style>
-    .cv-container {
-      box-shadow: 4px 2px 8px rgba(0,0,0,.2),-4px 0px 8px rgba(0,0,0,.2);
-    }
-      ul {
-        list-style: none;
-        padding: 1px 0px;
-        margin: 10px 0;
+      .bc-container {
+        box-shadow: 3px 2px 10px rgba(0, 0, 0, .3), -3px 0px 10px rgba(0, 0, 0, .3);
+        overflow: hidden;
       }
-
-      ul li:not(.cert) {
-        padding-left: 2rem;
-        background: white;
-      }
-      .cv-body {
-        padding-top:2rem !important;
-        text-transform: capitalize;
-      }
-      .cert>p:nth-child(1):before {
-        content: "✔ "
-      }
-      .cert:not(:last-child) {
-        margin-bottom: 1.4rem;
-      }
-
-      .cert {
-        1 padding-left: 1rem;
-      }
-
-      .cert li {
-        padding-left: 4rem;
-
-      }
-
-      .cert>p {
-        background: white;
-        margin: .3rem 1rem;
-        padding:1px 8px;
-      }
-
-      .year {
-        padding-left: 5px;
-      }
-      .langues {
-        text-transform: capitalize;
-      }
-    </style>
-    <!-- article and image -->
-    <div class="content w3-row w3-container w3-padding" style="margin:4rem .5rem" lang="en">
+    </style> 
+        <div class="content w3-row w3-container w3-padding w3-grey-light" style="margin:2rem .5rem" lang="en">
       <div class="ads w3-col m2 l2 w3-hide-small" style="opacity: 0">&larr;</div>
 
-      <div class="cv-container w3-col m7 l7 w3-half w3-light-gray w3-round" style="overflow:hidden">
-        <div id="cv" class="cv
-        w3-small" style="border-radius:0%;overflow: hidden;">
-          <div class="cv-header w3-teal w3-padding-small">
-            <h3>ISMAIL CHRAA</h3>
-            <p>ADRESSE: <span>ALLIANCES DARNA KENITRA</span></p>
-            <p>TEL: <span>0762-28-40-20</span></p>
-            <p>EMAIL: <span>ICHRAA99@GMAIL.COM</span></p>
-            <p>L'OBJECTIF: CHERCHE UN EMPLOI</p>
-          </div>
-          <!-- end cv header -->
-          <div class="cv-body w3-padding">
-            <div class="cv-item forma">
-          <h5>FORMATION:</h5>
-            <ul class="w3-text-blue">
-              <p class="year w3-text-purple">2022:</p>
-
-              <li class="cert">
-                <p>
-                  Diplome de technicien en électricité de maintenance industrielle
-                </p>
-                <p>etablissement:
-                  <span>
-                    institut spécialisé de technologie appliqué maamoura kenitra
-                  </span>
-              </li>
-              <li class="cert">
-                <p>BAC+1 en études anglais
-                </p>
-                <p>etablissement:
-                  <span>
-                    Faculté des Langues, Lettres et Arts Kénitra
-                  </span>
-              </li>
-              <p class="year w3-text-purple">2017:</p>
-              <li class="cert">
-                <p>Diplome de baccalauréat</p>
-                <p> filière: <span> science physique</span></p>
-                <p> Établissement: <span>lycée Omar El-Khayam teroual</span></p>
-              </li>
-            </ul>
-            </div>
-          <div class="cv-item langues">
-            <h5>LANGUES: </h5>
-            <ul class="w3-text-blue">
-              <li>Arabe: <span> langue maternelle</span></li>
-              <li>anglais: <span>courant</span></li>
-              <li> français: <span>bon</span></li>
-            </ul>
-          </div>
-          <div class="cv-item info">
-            <h5>INFORMATIQUE: </h5>
-            <ul class="w3-text-blue">
-              <li>DÉVELOPPEMENT WEB</li>
-              <li>WORD</li>
-              <li>EXCEL</li>
-              <li>ACCESS</li>
-            </ul>
-          </div>
-                    <div class="cv-item inters">
-            <h5>QUALITÉS:</h5>
-            <ul class="w3-text-blue">
-              <li>SÉRIEU</li>
-              <li>PONCTUEL</li>
-              <li>SENS DE RESPONSABILITÉ</li>
-              <li>ÉSPRIT D'ÉQUIPE</li>
-            </ul>
-          </div>
-
-          <div class="cv-item inters">
-            <h5>INTÉRÊTS:</h5>
-            <ul class="w3-text-blue">
-              <li>SPORT</li>
-              <li>WEB</li>
-              <li>WRITING</li>
-            </ul>
-          </div>
-          </div>
-          <!-- end of cv body -->
+    <div class="w3-col m7 l7 w3-half">
+     
+        <div class="w3-center w3-teal w3-round-xlarge">
+          <h3>بطاقة تعريفية:</h3>
         </div>
-        <!-- end of cv -->
-      </div>
+        <div class="bc-container w3-round-xlarge w3-small">
+          <!-- start business card -->
+          <div class="business-card w3-center w3-teal w3-padding-small">
+            <div class="w3-center w3-left" style="width:100px;height:100px;border-radius: 50%;overflow:hidden;margin:.3rem">
+              <img class="w3-image w3-block" src="images/owner_c.png" width="80" style="transform: translate(0,-10px) scale(1.2)" alt="">
+            </div>
+            <div class="w3-padding-small" style="text-align:right;">
+              <h5 class="w3-center">إسماعيل اشراع</h5>
+              <p>
+                إسمي سماعيل وأنا من المغرب عمري هو 24 سنة.
+                شغفي هو مجال الويب بكل تشعباته التقنية. بدأت رحلة التعلم الذاتي في مجال تطوير مواقع وتطبيقات الويب منذ اكثر من 5 سنوات.
+                أهتم بالجوانب البصرية كثيرا وهذا موقعي الشخصي قمت بتطويره بنفسي وفيه يمكنك أن تلاحظ العناية في الجوانب البصرية.
+                <br>
+                <h6>المهارات : </h6>
+              <ul class="">
+                <li>
+                  دراية معمقة بلغات الويب المعنية بتطوير واجهة المستخدم: جافاسكريبت، HTML، CSS.
+                </li>
+                <li>
+                  فهم جيد للغات جهة الخادم : Ruby، PHP، Python
+                </li>
+                <li>
+                  الاشتغال بالمكتبات البرمجية: Jquery، AngularJS، Bootstrap ،W3CSS.
+                </li>
+                <li>
+                  الاشتغال بإطارات العمل: Django، Flask.
+                </li>
+                <li>الاشتغال بقواعد البيانات: mySQL، postgreSQL.</li>
+                <li>الاشتغال على المشاريع البرمجية باستخدام أداة git ومنصة GitHub.</li>
+              </ul>
+              </p>
+              <h6>خدماتي:</h6>
+              <ul>
+                <li>إنشاء وتطوير مواقع الويب: سواء تعلق الأمر بموقع ويب تعرض عليه خدماتك أو مدونة شخصية أو موقع ويب احترافي للتجارة الالكترونية.</li>
+                <li>صيانة المواقع الاكترونية وتحسين أداء صفحات الويب.</li>
+                <li>إجراء تحسينات SEO على الموقع وجعل موقعك يظهر على الصفحات الاولى لمحركات البحث الشهيرة مثل Google و Bing.</li>
+              </ul>
+              <h6>تواصل معي:</h6>
+              <p>عبر الايميل : ichraa99@gmail.com </p>
+              <p>عبر الهاتف:
+                0021276228420</p>
+            </div>
+          </div>
+          <!-- end business card -->
+        </div>
+      <!-- end of bc container-->
+    </div>
     <!-- end of main content -->
     <div class="ads w3-col m2 l2 w3-center">
-      <a class="w3-button w3-blue w3-round w3-margin" href="./static/ISMAIL _CHRAA_CV.docx">télécharger le fichier</a>
     </div>
     </div>
     <!-- about us, contact,copyright,year -->
-    <div class="footer w3-container w3-padding w3-purple w3-botftom">
+    <div class="footer w3-container w3-padding w3-purple">
       <code class="w3-small w3-center" dir="rtl">
         <p>
           <span>
