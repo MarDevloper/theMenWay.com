@@ -1,7 +1,8 @@
     .p-content {
       text-align: justify;
-      line-height: 2.5;
-      color: black;
+      line-height: 2;
+      font-size: 1.2rem !important;
+      color: #001E38 !important;
     }
 
     .ads {
