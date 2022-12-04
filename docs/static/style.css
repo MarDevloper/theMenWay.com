@@ -4,7 +4,9 @@
       font-size: 1.2rem !important;
       color: #001E38 !important;
     }
-
+    .more-articles a {
+      color:#2196F3 !important;
+    }
     .ads {
       opacity: 1;
     }
