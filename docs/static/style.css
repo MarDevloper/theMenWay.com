@@ -8,7 +8,7 @@
   url("../fonts/droidnaskh-regular-webfont.ttf") format("truetype");
   font-display:swap;
  }
-    html,body, h1,h2,h3,h4, .footer code{
+    html,body, h1,h2,h3,h4,h5,h6,a, .footer code{
       font-family: "ar";
     }
     .p-content {
