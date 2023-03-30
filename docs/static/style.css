@@ -8,7 +8,7 @@
   url("../fonts/droidnaskh-regular-webfont.ttf") format("truetype");
   font-display:swap;
  }
-    html,body, h1,h2,h3,h4,h5,h6,a, .footer code{
+    html,body, h1,h2,h3,h4,h5>p,h6,a,p, .footer code{
       font-family: "ar";
     }
     .p-content {
@@ -96,7 +96,8 @@
 
     .w3-metro-light-blue {
       color: #000 !important;
-      background-color: #eff4ff !important
+      background-color: #eff4ff !important;
+      font-family: "ar";
     }
 
     .w3-metro-blue {
